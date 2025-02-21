@@ -1,11 +1,5 @@
-dddddsdsds
-sdsd
-sds
-ds
-B
-A
-C
- Mycv
+
+# Mycv
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
@@ -32,11 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 T
 
 # Further help
-as
-
-
-B
-a
+update readme
 
 
 
