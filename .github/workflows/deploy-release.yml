@@ -7,6 +7,11 @@ on:
 jobs:
   ci_cd_deploy_release:
     runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
     steps:
       - run: ls -la
       - uses: actions/checkout@v2
@@ -32,3 +37,13 @@ jobs:
       - name: list docs
         run: ls -la docs  
 
+      - name: GIT commit and push docs
+        env: 
+         CI_COMMIT_MESSAGE: save spark results
+         CI_COMMIT_AUTHOR: giovanni760 
+        run: |
+         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+         git config --global user.email "giovanni760@live.com.mx"
+         git add docs
+         git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+         git push
