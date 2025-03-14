@@ -24,4 +24,11 @@ jobs:
         run: npm run build
         
       - name: list dir
-        run: ls -la dist/mycv/browser        
+        run: ls -la dist/mycv/browser  
+      
+      - name: copy index.html, css, js
+        run: ls -la dist/mycv/browser/. docs  
+  
+      - name: list docs
+        run: ls -la docs  
+
