@@ -46,4 +46,4 @@ jobs:
          git config --global user.email "giovanni760@live.com.mx"
          git add .
          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-         git push origin deploy-release
+         git push 
