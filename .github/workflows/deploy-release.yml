@@ -42,7 +42,7 @@ jobs:
          CI_COMMIT_MESSAGE: save spark results
          CI_COMMIT_AUTHOR: giovanni760 
         run: |
-         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+         git config --global user.name "giovanni760"
          git config --global user.email "giovanni760@live.com.mx"
          git add .
          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
