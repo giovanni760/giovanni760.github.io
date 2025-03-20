@@ -43,7 +43,7 @@ jobs:
          CI_COMMIT_AUTHOR: giovanni760 
         run: |
          git config --global user.name "giovanni760"
-         git config --global user.email "giovanni760@live.com.mx"
+         git config --global user.email "giovanni162005@gmail.com"
          git add .
          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
          git push 
