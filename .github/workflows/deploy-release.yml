@@ -34,7 +34,7 @@ jobs:
       - name: copy index.html, css, js
         run: ls -la dist/mycv/browser/*.* docs  
   
-      - name: list docs
+      - name: list docs\
         run: ls -la docs  
 
       - name: GIT commit and push docs
