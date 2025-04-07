@@ -1,6 +1,6 @@
 export class Education{
 	id?: string;
-	highSchool?: 'item1, item2, item n';
-	university?: 'item1, item2, item n';
-
+	Accomplished?: 'item1, item2, item n';
+	carrera?: 'item1, item2, item n';
+	years?: 'item1, item2';
 }
