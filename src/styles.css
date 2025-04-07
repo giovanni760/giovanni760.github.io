@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos globales */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e9f5e9; /* Verde muy claro de fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: #2e7d32; /* Verde claro por defecto */
+}
+
+/* Contenedor principal */
+body > * {
+  width: 85%;
+  max-width: 1000px;
+  background-color: #f8fff8;
+  border: 2px solid #4caf50;
+  padding: 35px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/* Tabla y celdas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #a5d6a7;
+  padding: 12px;
+  vertical-align: top;
+  color: #388e3c; /* Texto en celdas con verde medio */
+}
+
+/* Imagen centrada y redondeada */
+td img {
+  display: block;
+  margin: auto;
+  max-width: 120px;
+  border-radius: 12px;
+  border: 2px solid #c8e6c9;
+}
+
+/* Títulos principales */
+h1, h2, h3, h4, h5, h6 {
+  color: #1b5e20; /* Verde fuerte para títulos */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Negritas */
+strong {
+  color: #1b5e20;
+}
+
+/* Secciones destacadas dentro del CV */
+td b {
+  color: #1b5e20;
+}
+
+/* Listas */
+ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #2e7d32;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  body > * {
+    padding: 20px;
+  }
+
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  td img {
+    margin: 1rem auto;
+  }
+}
+
