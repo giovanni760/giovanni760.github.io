@@ -1,5 +1,7 @@
 export class Certificates{
 id?: string;
-java?: 'item1, item2, item n';
-pyton?: 'item1, item2, item n';
+Accomplished?: 'item1, item2, item n';
+certificate?: 'item1, item2, item n';
+year?: 'item1, item2, item n';
+
 }
