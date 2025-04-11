@@ -2,7 +2,7 @@
 
 /* Estilos globales */
 body, html {
-  height: 100%;
+   
   margin: 0;
   padding: 0;
   background-color: #e9f5e9; /* Verde muy claro de fondo */
@@ -15,7 +15,7 @@ body, html {
 
 /* Contenedor principal */
 body > * {
-  width: 85%;
+  width: 150%;
   max-width: 1000px;
   background-color: #f8fff8;
   border: 2px solid #4caf50;
@@ -23,6 +23,7 @@ body > * {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   box-sizing: border-box;
+  margin: 40px auto;
 }
 
 /* Tabla y celdas */
@@ -106,3 +107,145 @@ a:hover {
   }
 }
 
+/* Estilo del perfil superior */
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.profile-left {
+  flex: 1;
+}
+
+.profile-left h1 {
+  font-size: 1.8rem;
+  color: #1b5e20;
+  margin-bottom: 6px;
+}
+
+.goal {
+  font-size: 1rem;
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.profile-photo img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a5d6a7;
+}
+
+.profile-contact {
+  font-size: 0.9rem;
+  color: #2e7d32;
+  line-height: 1.6;
+}
+
+.profile-contact p strong {
+  color: #1b5e20;
+}
+.skills-section {
+  margin-top: 2rem;
+}
+
+.skill-title {
+  font-size: 1.4rem;
+  color: #1b5e20;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c8e6c9;
+  padding-bottom: 4px;
+}
+
+.skill-bar-container {
+  background-color: #e0f2f1;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 24px;
+}
+
+.skill-bar {
+  height: 100%;
+  background-color: #66bb6a;
+  width: 70%; /* Puedes ajustar esto dinámicamente si agregas nivel */
+  border-radius: 12px 0 0 12px;
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.work-section {
+  margin-top: 2rem;
+}
+
+ul.work-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.work-list li {
+  background-color: #f1f8e9;
+  border-left: 5px solid #81c784;
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  color: #2e7d32;
+}
+
+ul.work-list li b {
+  font-size: 1rem;
+  color: #1b5e20;
+}
+
+ul.work-list i {
+  color: #4caf50;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  color: #1b5e20;
+  margin-top: 2rem;
+  border-bottom: 2px solid #c8e6c9;
+  padding-bottom: 4px;
+}
+
+ul.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul.custom-list li {
+  background-color: #f1f8e9;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-left: 5px solid #81c784;
+  border-radius: 8px;
+  color: #2e7d32;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+ul.custom-list li:hover {
+  transform: scale(1.01);
+  background-color: #e8f5e9;
+}
+
+ul.custom-list li b {
+  color: #1b5e20;
+}

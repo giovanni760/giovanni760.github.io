@@ -1,9 +1,18 @@
-<p>      <b>Certificates:</b></p>
+<p class="section-title"><b>Certificates:</b></p>
+<ul class="custom-list" *ngFor="let for of certificates;">
+  <li>
+    {{ for.Accomplished }} - <b>{{ for.certificate }}</b> <br>
+    {{ for.year }}
+  </li>
+</ul>
+
+
+<!--<p>      <b>Certificates:</b></p>
 
 <ul *ngFor="let for of certificates;">
 <li>
 	{{ for.Accomplished }} - {{ for.certificate  }} <br>
     {{ for.year }} <br>
   </li>
-</ul>
+</ul>-->
 
