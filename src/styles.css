@@ -249,3 +249,25 @@ ul.custom-list li:hover {
 ul.custom-list li b {
   color: #1b5e20;
 }
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-chip {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.skill-chip:hover {
+  background-color: #81c784;
+  cursor: default;
+}
