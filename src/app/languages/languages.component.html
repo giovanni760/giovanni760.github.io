@@ -1,8 +1,16 @@
-<p>      <b>Languages:</b></p>
+<p class="section-title"><b>Languages:</b></p>
+<ul class="custom-list" *ngFor="let for of languages;">
+  <li>
+    <b>{{ for.name }}</b> <br>
+    {{ for.level }}
+  </li>
+</ul>
+
+<!--<p>      <b>Languages:</b></p>
 <ul *ngFor="let for of languages;">
   <li>
     
     {{ for.name }} <br>
     {{ for.level }} <br>
   </li>
-</ul>
+</ul>-->

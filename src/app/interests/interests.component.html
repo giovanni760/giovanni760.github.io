@@ -1,8 +1,13 @@
-<p>      <b>Interests:</b></p>
+<p class="section-title"><b>Interests:</b></p>
+<ul class="custom-list" *ngFor="let for of interests;">
+  <li>{{ for.interest }}</li>
+</ul>
+
+<!--<p>      <b>Interests:</b></p>
 <ul *ngFor="let for of interests;">
   <li>
     
     {{ for.interest }} <br>
     
   </li>
-</ul>
+</ul>-->
