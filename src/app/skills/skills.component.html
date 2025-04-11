@@ -1,6 +1,14 @@
-<p>      <b>Skills:</b></p>
+<p class="section-title"><b>Skills:</b></p>
+<ul class="custom-list" *ngFor="let job of skills;">
+  <li>
+    <b>{{ job.skills }}</b>
+  </li>
+</ul>
+
+
+<!--<p>      <b>Skills:</b></p>
 <ul *ngFor="let job of skills;">
    <li>
 	   {{job.skills}} <br>
    </li>
-</ul>
+</ul>-->
