@@ -1,9 +1,9 @@
 <p class="section-title"><b>Skills:</b></p>
-<ul class="custom-list" *ngFor="let job of skills;">
-  <li>
-    <b>{{ job.skills }}</b>
-  </li>
-</ul>
+<div class="skills-tags">
+  <span class="skill-chip" *ngFor="let job of skills">
+    {{ job.skills }}
+  </span>
+</div>
 
 
 <!--<p>      <b>Skills:</b></p>
